@@ -1,0 +1,37 @@
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Reconhecimento Facial</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+</head>
+<body class="nossas">
+<center>
+    <h1 class="rain">APP WEB DE RECONHECIMENTO FACIAL</h1>
+    <h6>Este website foi criado para identificar apenas minha família <span class="fire">Está avisado</span></h6>
+    <h3> O modelo foi criado para estas pessoas </h3>
+    <h2 class="pai" id="pai">pai</h2>
+    <hr>
+    <h2 class="mae" id="mae">mãe</h2>
+    <hr>
+    <h2>filho</h2><h6>(eu)</h6>
+    <hr>
+    <h3>⬇ Aqui será exibido a webcam ⬇</h3>
+    <div id="camera" style="width: 350px; height: 300px;"></div>
+    <button onclick="takeSnapshot()"class="cap" id="cap">Capturar Imagem</button>
+    <br>
+    <h3>⬇ aqui será exibido a foto retirada ⬇</h3>
+    <div id="result"></div>
+    <br>
+    <button onclick="check()" class="exibir" id="exibir">Exibir Resultados</button>
+    <br>
+    <br>
+    <h3 class="ob">Pessoa:</h3> <span id="resultObjectName"></span> 
+      <h3 class="pr">Precisão:</h3> <span id="resultObjectAccuracy"></span>
+</center>
+<script src="java.js"></script>
+</body>
+</html>
